@@ -11296,3 +11296,13 @@ body.sidebar-toggled footer.sticky-footer {
     font-size: 20px;
     padding: 0 7px;
 }
+
+img {
+    max-width: 180px;
+    margin-top: 10px;
+}
+
+input[type=file] {
+    padding: 10px;
+    
+}

@@ -44,10 +44,10 @@
 
                 <div class="form-group">
                     <label asp-for="ImageFile">ImageFile</label>
-                    <input asp-for="ImageFile" class="form-control">
+                    <input asp-for="ImageFile" class="form-control" onchange="readURL(this);">
                     <span class="text-danger" asp-validation-for="ImageFile"></span>
                     <input type="hidden" name="ImageName" value="@Model.ImageName" />
-                    <img src="~/manage/uploads/sliders/@Model.ImageName" />
+                    <img id="sliderImage" src="~/manage/uploads/sliders/@Model.ImageName" />                    
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
